@@ -2,22 +2,23 @@
 List of useful commands when configuring and working with IPFS nodes
 
 
-## setup IPFS
-
+## install IPFS
 ```
 wget https://dist.ipfs.io/go-ipfs/v0.4.20/go-ipfs_v0.4.20_linux-amd64.tar.gz
 tar zxvf go-ipfs_v0.4.20_linux-amd64.tar.gz
 cd go-ipfs && ./install.sh
 ```
 
-# tool for json pretty print
+### install tool for json pretty print
+```
 sudo apt-get -y update && sudo apt-get -y install jq
+```
 
-#init ipfs storage
-ipfs init
+### init ipfs storage
+```ipfs init```
 
 
-# increase opened files limit
+### increase opened files limit
 ulimit -n 5560
 
 
