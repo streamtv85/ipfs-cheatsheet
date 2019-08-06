@@ -2,7 +2,7 @@
 List of useful commands when configuring and working with IPFS nodes
 
 
-# setup IPFS
+## setup IPFS
 
 ```
 wget https://dist.ipfs.io/go-ipfs/v0.4.20/go-ipfs_v0.4.20_linux-amd64.tar.gz
