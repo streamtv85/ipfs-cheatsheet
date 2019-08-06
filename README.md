@@ -15,24 +15,36 @@ sudo apt-get -y update && sudo apt-get -y install jq
 ```
 
 init ipfs storage
-```ipfs init```
+```
+ipfs init
+```
 
 increase opened files limit
-```ulimit -n 5560```
+```
+ulimit -n 5560
+```
 
 daemon is a console app so we start it in a separate screen session
-```screen -S ipfs_daemon -d -m ipfs daemon```
+```
+screen -S ipfs_daemon -d -m ipfs daemon
+```
 
 ## IPFS commands
 
 get info about the node (ID, public key,, version, API endpoints)
-```ipfs id```
+```
+ipfs id
+```
 
 get the list of connected peers
-```ipfs swarm peers```
+```
+ipfs swarm peers
+```
 
 get peer count
-```ipfs swarm peers | wc -l```
+```
+ipfs swarm peers | wc -l
+```
 
 
 
@@ -53,7 +65,9 @@ ipfs bootstrap add MULTIADDR-OF-PROVIDER
 ```
 
 then start the daemon without auto-routing:
-```screen -S ipfs_daemon -d -m ipfs daemon --routing=none```
+```
+screen -S ipfs_daemon -d -m ipfs daemon --routing=none
+```
 
 
 
