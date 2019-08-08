@@ -103,7 +103,7 @@ ipfs name publish --key=dog-site <hash of dog folder>
 ### Add DNS entry for the website
 
 You can bind IPNS to domain by adding a DNS TXT record of the form
-`dnslink=/ipfs/<peerID>`, so you can have paths like `/ipns/example.com/2015/09/15/hosting-a-website-on-ipfs/`.
+`dnslink=/ipns/<peerID>`, so you can have paths like `/ipns/example.com/2015/09/15/hosting-a-website-on-ipfs/`.
 
 ------------------------
 
