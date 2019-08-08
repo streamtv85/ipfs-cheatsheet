@@ -1,5 +1,5 @@
 # ipfs-cheatsheet
-List of useful commands when configuring and working with IPFS nodes
+List of useful commands when configuring and working with IPFS
 
 
 ## install IPFS
@@ -69,11 +69,12 @@ On each node, add multiaddress of another node to bootstrap nodes so they can se
 ipfs bootstrap add MULTIADDR-OF-PROVIDER
 ```
 ------------------------
-Publish website
+## Publish website
 make daemon HTTP gateway listen on public interface
 ```
 ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8080
 ```
+then restart ipfs daemon (kill then start it again)
 ```
 ipfs add -r site/
 ```
@@ -92,6 +93,17 @@ Once you change site contents:
 ipfs add -r site/
 ipfs name publish <new site hash>
 ```
+
+### Publish different sites under different keys on one node
+```
+ipfs key gen --type=rsa --size=2048 dog-site
+ipfs add ./my-dog-site
+ipfs name publish --key=dog-site <hash of dog folder>
+```
+### Add DNS entry for the website
+
+You can bind IPNS to domain by adding a DNS TXT record of the form
+`dnslink=/ipfs/<peerID>`, so you can have paths like `/ipns/example.com/2015/09/15/hosting-a-website-on-ipfs/`.
 
 ------------------------
 
