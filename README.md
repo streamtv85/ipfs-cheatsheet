@@ -9,9 +9,9 @@ tar zxvf go-ipfs_v0.4.20_linux-amd64.tar.gz
 cd go-ipfs && ./install.sh
 ```
 
-install tool for json pretty print
+install tool to pretty print json and file tree
 ```
-sudo apt-get -y update && sudo apt-get -y install jq
+sudo apt-get -y update && sudo apt-get -y install jq tree
 ```
 
 init ipfs storage
