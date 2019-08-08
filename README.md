@@ -59,18 +59,39 @@ ipfs config Reprovider.Interval "0"
 ipfs bootstrap rm --all
 ```
 
-
+start the daemon without auto-routing and get multiaddress of the node:
+```
+screen -S ipfs_daemon -d -m ipfs daemon --routing=none
+ipfs id
+```
+On each node, add multiaddress of another node to bootstrap nodes so they can see each other
 ```
 ipfs bootstrap add MULTIADDR-OF-PROVIDER
 ```
-
-then start the daemon without auto-routing:
+------------------------
+Publish website
+make daemon HTTP gateway listen on public interface
 ```
-screen -S ipfs_daemon -d -m ipfs daemon --routing=none
+ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8080
 ```
+```
+ipfs add -r site/
+```
+now it should be accessible via 
+http://<node ip>:8080/ipfs/<hash>
 
+publish ipns entry
+```
+ipfs name publish <hash>
+```
+now it is accessible via static URL
+http://<node ip>:8080/ipns/<node id>
 
-
+Once you change site contents:
+```
+ipfs add -r site/
+ipfs name publish <new site hash>
+```
 
 ------------------------
 
