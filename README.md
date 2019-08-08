@@ -78,14 +78,14 @@ ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8080
 ipfs add -r site/
 ```
 now it should be accessible via 
-http://<node ip>:8080/ipfs/<hash>
+`http://<node ip>:8080/ipfs/<hash>`
 
 publish ipns entry
 ```
 ipfs name publish <hash>
 ```
 now it is accessible via static URL
-http://<node ip>:8080/ipns/<node id>
+`http://<node ip>:8080/ipns/<node id>`
 
 Once you change site contents:
 ```
