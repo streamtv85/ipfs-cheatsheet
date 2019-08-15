@@ -23,10 +23,20 @@ increase opened files limit
 ```
 ulimit -n 5560
 ```
+(optional) Configure API and Status page to listen on public interface
+Note! Publishing API is unsecure because anyone can use it
+```
+ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8080
+ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
+```
 
 daemon is a console app so we start it in a separate screen session
 ```
 screen -S ipfs_daemon -d -m ipfs daemon
+```
+You may be able to open IPGS GUI to see the status of the node
+```
+http://<hostname>:5001/webui
 ```
 
 ## IPFS commands
@@ -45,8 +55,10 @@ get peer count
 ```
 ipfs swarm peers | wc -l
 ```
-
-
+Get current config
+```
+ipfs config
+```
 
 -----------------
 ## setup private swarm
@@ -113,6 +125,7 @@ so you can have paths like `/ipns/example.com/2015/09/15/hosting-a-website-on-ip
 ------------------------
 
 ## install ipfs-pack
+it is a tool and library to work with ipfs and large collections of data in UNIX/POSIX filesystems
 ```
 wget https://dist.ipfs.io/ipfs-pack/v0.6.0/ipfs-pack_v0.6.0_linux-amd64.tar.gz
 tar zxvf ipfs-pack_v0.6.0_linux-amd64.tar.gz
