@@ -59,6 +59,24 @@ Get current config
 ```
 ipfs config
 ```
+Add object(s) to IPFS (-r flag is recursive add of a folder)
+```
+ipfs add -r /path/to/folder
+```
+Get object from IPFS
+```
+ipfs get <hash>
+```
+Get info about object
+```
+ipfs object get <hash> | jq
+```
+Print contents of the file
+```
+ipfs cat <hash>
+```
+
+
 
 -----------------
 ## setup private swarm
