@@ -29,6 +29,12 @@ Note! Publishing API is unsecure because anyone can use it
 ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8080
 ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
 ```
+(optional) configure CORS so that Web UI can access API
+```
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://104.248.205.184:5001", "http://127.0.0.1:5001", "https://webui.ipfs.io"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "GET", "POST"]'
+```
+
 
 daemon is a console app so we start it in a separate screen session
 ```
@@ -57,7 +63,7 @@ ipfs swarm peers | wc -l
 ```
 Get current config
 ```
-ipfs config
+ipfs config show
 ```
 Add object(s) to IPFS (-r flag is recursive add of a folder)
 ```
