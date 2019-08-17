@@ -45,6 +45,16 @@ You may be able to open IPGS GUI to see the status of the node
 http://<hostname>:5001/webui
 ```
 
+### Mount ipfs to the linux filesystem
+
+```
+sudo mkdir /ipfs /ipns
+sudo chown $(whoami) /ipfs /ipns
+ipfs daemon &
+ipfs mount
+```
+
+
 ## IPFS commands
 
 get info about the node (ID, public key,, version, API endpoints)
