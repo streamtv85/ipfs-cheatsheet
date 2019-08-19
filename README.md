@@ -156,18 +156,10 @@ You can bind IPNS to a domain by adding a DNS TXT record of the form
 
 so you can have paths like `/ipns/example.com/2015/09/15/hosting-a-website-on-ipfs/`.
 
-### You can make even more readable link!!
+### You can make the link even more readable!
 
 create a DNS TXT record for _dnslink.your.domain
 
 And you will be able to access the site under your.domain
 
-------------------------
-
-## install ipfs-pack
-it is a tool and library to work with ipfs and large collections of data in UNIX/POSIX filesystems
-```
-wget https://dist.ipfs.io/ipfs-pack/v0.6.0/ipfs-pack_v0.6.0_linux-amd64.tar.gz
-tar zxvf ipfs-pack_v0.6.0_linux-amd64.tar.gz
-cd go-ipfs && ./install.sh
-```
+That's it!
