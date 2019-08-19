@@ -31,7 +31,7 @@ ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
 ```
 (optional) configure CORS so that Web UI can access API
 ```
-ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://104.248.205.184:5001", "http://127.0.0.1:5001", "https://webui.ipfs.io"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://<public_IP>:5001", "http://127.0.0.1:5001", "https://webui.ipfs.io"]'
 ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "GET", "POST"]'
 ```
 
