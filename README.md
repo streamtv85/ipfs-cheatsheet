@@ -164,3 +164,13 @@ create a DNS TXT record for _dnslink.your.domain
 And you will be able to access the site under your.domain
 
 That's it!
+
+--------------------------
+Public node:
+
+http://167.71.11.220:5001/webui
+/ipns/QmcRoCPijoMHvrCQbC57V7VK7sUqgTiPS3GGofmfkyc1JA
+
+http://ipfs.jora.rocks/ipns/QmcRoCPijoMHvrCQbC57V7VK7sUqgTiPS3GGofmfkyc1JA
+http://ipfs.jora.rocks/ipns/ipfs.jora.rocks
+http://simple.jora.rocks/
