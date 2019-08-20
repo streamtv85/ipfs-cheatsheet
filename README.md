@@ -27,12 +27,12 @@ ulimit -n 5560
 
 Note! Publishing API is unsecure because anyone can use it
 ```
-ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8080
+ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/80
 ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
 ```
 (optional) configure CORS so that Web UI can access API
 ```
-ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://167.71.11.220:5001", "http://simple.jora.rocks:5001", "http://ipfs.jora.rocks:5001", "http://127.0.0.1:5001", "https://webui.ipfs.io"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://167.71.11.220:5001", "http://simple.jora.rocks:5001", "http://ipfs.jora.rocks:5001", "http://127.0.0.1:5001"]'
 ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "GET", "POST"]'
 ```
 
@@ -119,7 +119,7 @@ ipfs bootstrap add MULTIADDR-OF-PROVIDER
 ## Publish website
 make daemon HTTP gateway listen on public interface
 ```
-ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8080
+ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/80
 ```
 then restart ipfs daemon (kill then start it again)
 ```
@@ -170,10 +170,11 @@ Public node:
 
 http://167.71.11.220:5001/webui
 
-/ipns/QmcRoCPijoMHvrCQbC57V7VK7sUqgTiPS3GGofmfkyc1JA
+http://167.71.11.220/ipfs/QmUoVyiSy4ZoGxDh8B4Mip9QX9ZCTPqyZwtgz6uJLcx5K6
+http://167.71.11.220/ipns/QmcRoCPijoMHvrCQbC57V7VK7sUqgTiPS3GGofmfkyc1JA
 
-http://ipfs.jora.rocks:8080/ipns/QmcRoCPijoMHvrCQbC57V7VK7sUqgTiPS3GGofmfkyc1JA
+http://ipfs.jora.rocks/ipns/QmcRoCPijoMHvrCQbC57V7VK7sUqgTiPS3GGofmfkyc1JA
 
-http://ipfs.jora.rocks:8080/ipns/ipfs.jora.rocks
+http://ipfs.jora.rocks/ipns/simple.jora.rocks
 
-http://simple.jora.rocks:8080/
+http://simple.jora.rocks/
