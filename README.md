@@ -141,6 +141,8 @@ ipfs add -r site/
 ipfs name publish <new site hash>
 ```
 
+Note! TTL for such publish is 12 hours
+
 ### Publish different sites under different keys on one node
 ```
 ipfs key gen --type=rsa --size=2048 dog-site
