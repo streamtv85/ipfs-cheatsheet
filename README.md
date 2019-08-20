@@ -184,14 +184,8 @@ http://ipfs.jora.rocks/ipns/simple.jora.rocks
 http://simple.jora.rocks/
 
 Access the site from other gateways!
+
 https://ipfs.io/ipns/simple.jora.rocks
 
 https://ipfs.io/ipns/QmcRoCPijoMHvrCQbC57V7VK7sUqgTiPS3GGofmfkyc1JA
 
-https://cloudflare-ipfs.com/ipns/QmcRoCPijoMHvrCQbC57V7VK7sUqgTiPS3GGofmfkyc1JA
-
-https://ipfs.infura.io/ipns/QmcRoCPijoMHvrCQbC57V7VK7sUqgTiPS3GGofmfkyc1JA
-
-https://ipfs.busy.org/ipns/QmcRoCPijoMHvrCQbC57V7VK7sUqgTiPS3GGofmfkyc1JA
-
-https://gateway.pinata.cloud/ipns/QmcRoCPijoMHvrCQbC57V7VK7sUqgTiPS3GGofmfkyc1JA
