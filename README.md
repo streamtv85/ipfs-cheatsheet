@@ -24,6 +24,7 @@ increase opened files limit
 ulimit -n 5560
 ```
 (optional) Configure API and Status page to listen on public interface
+
 Note! Publishing API is unsecure because anyone can use it
 ```
 ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8080
@@ -40,7 +41,7 @@ daemon is a console app so we start it in a separate screen session
 ```
 screen -S ipfs_daemon -d -m ipfs daemon
 ```
-You may be able to open IPGS GUI to see the status of the node
+Now you should be able to open IPFS GUI to see the status of the node
 ```
 http://<hostname>:5001/webui
 ```
