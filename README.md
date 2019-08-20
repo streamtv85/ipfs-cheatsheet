@@ -170,7 +170,10 @@ Public node:
 
 http://167.71.11.220:5001/webui
 
+http://ipfs.jora.rocks:5001/webui
+
 http://167.71.11.220/ipfs/QmUoVyiSy4ZoGxDh8B4Mip9QX9ZCTPqyZwtgz6uJLcx5K6
+
 http://167.71.11.220/ipns/QmcRoCPijoMHvrCQbC57V7VK7sUqgTiPS3GGofmfkyc1JA
 
 http://ipfs.jora.rocks/ipns/QmcRoCPijoMHvrCQbC57V7VK7sUqgTiPS3GGofmfkyc1JA
