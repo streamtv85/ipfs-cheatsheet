@@ -141,7 +141,7 @@ ipfs add -r site/
 ipfs name publish <new site hash>
 ```
 
-Note! TTL for such publish is 12 hours
+Note! TTL for such publish is 24 hours
 
 ### Publish different sites under different keys on one node
 ```
